@@ -1,0 +1,132 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family :Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x:hidden;
+    background: #FFC55A;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #FFA500;
+    z-index: 100;
+    
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+   /* padding: 30px 100px; */
+}
+
+.logo {
+ 
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+/* .navigation a:hover, .navigation a.active {
+    background: #333;
+    color: #fff;
+} */
+
+
+.About_me {
+    margin-top: 50px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: antiquewhite;
+}
+
+
+.about_me__inner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    /* background-color: #be913ea6; */
+    display: flex;
+    align-items: center;
+}
+
+.aboutImg {
+    display: flex;
+    flex-direction: column;
+   
+    width: 50%;
+}
+
+.aboutImg  > h1 {
+    width: 444px;
+    text-align: center;
+    padding-bottom: 60px;
+} 
+
+.myImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 444px;
+    height: 444px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    border: 52px solid #FFA500;
+}
+
+.myImg > img {
+    width: 224px;
+    height: 285px;
+}
+
+.aboutTxts {
+    display: flex;
+    width: 50%;
+    /* background-color: aquamarine; */
+}
+
+.aboutTxts > ul {
+    width: 50%;
+    height: 598px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutTxts ul li {
+  margin: 20px 0;
+}
+
+.aboutTxts ul li:nth-child(2n) {
+    margin-top: 2px;
+    /* font-weight: 900; */
+}
+
+
+.aboutTxts ul li:nth-child(odd) {
+   font-weight: 900;
+}
