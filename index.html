@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vars.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GSAP CDN 링크 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- ScrollTrigger 플러그인 CDN 링크 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <title>자기소개 웹사이트</title>
 </head>
 <body>
@@ -12,19 +19,31 @@
     <header>
         <div class="header__inner">
             <h2 class="logo">
-                <img class="logo_img" src="img/logo.png" alt="">
+                <a href="#">
+                    <img class="logo_img" src="img/logo.png" alt="">
+                </a>
             </h2>
             <nav class="navigation">
-                <a href="#" class="active">About</a>
-                <a href="#">favorite</a>
-                <a href="#">ending</a> 
+                <a href="#intro">intro</a>
+                <a href="#about">about</a>
+                <a href="#favorite">favorite</a> 
             </nav>
         </div>
     </header>
+    <!-- intro -->
+    <section class="intro main">
+        <a name='intro'></a>
+        <div class="intro_txts">
+            <h1>&lt;h1&gt;안녕하세요!!&lt;/h1&gt;</h1>
+            <h1>&lt;p&gt;저에 대해 알고 싶으시다구요??&lt;p&gt;</h1>
+            <h1>&lt;p&gt;그럼 여기로~&lt;p&gt;</h1>
+        </div>
+    </section>
     <!-- About_me -->
-    <section class="About_me">
+    <section class="About_me" >
+        <a name='about'></a>
         <div class="about_me__inner">
-            <div class="aboutImg">
+            <div class="aboutTitle">
                 <h1>ABOUT SEOLHWA</h1>
                 <div class="myImg">
                     <img src="img/seolhwa.png">
@@ -38,8 +57,8 @@
                     <li>ISTP</li>
                     <li>별자리</li>
                     <li>물병자리</li>
-                    <li>가족관계</li>
-                    <li>막내</li>
+                    <li>십이지</li>
+                    <li>개띠</li>
                 </ul>                
                  <ul>
                     <li>학교</li>
@@ -57,7 +76,55 @@
            </div>
         </div>
     </section>
-   
-
+     <!-- favorite-->
+     <a name='favorite'></a>
+     <section class="favorite" id="favoriteSection" name='favorite'>
+        <div class="favorite__inner">
+            <div class="favoriteTitle">
+                <h1>My Favorite</h1>
+            </div>
+    
+            <div class="favoriteImg1">
+                <img src="img/musical.png" alt="Favorite Image 1" id="favoriteImg1">
+            </div>
+        </div>
+    </section>
+    <!-- ending-->
+    <section class="ending" name='ending'>
+        <div class="ending_grad"></div>
+        <div class="ending__inner">
+            <ul>
+                <li class="item" data-aos="fade-up">봐주셔서 감사합니다.</li>
+                <li class="item" data-aos="fade-up">Thank you for reviewing it.</li>
+                <li class="item" data-aos="fade-up">谢谢大家的收看</li>
+                <li class="item" data-aos="fade-up">Gracias por verme.</li>
+                <li class="item" data-aos="fade-up">Merci d'avoir regardé.</li>
+                <li class="item" data-aos="fade-up">Vielen Dank für Ihre Aufmerksamkeit.</li>
+                <li class="item" data-aos="fade-up">Спасибо за просмотр.</li>
+                <li class="item" data-aos="fade-up">Obrigado por o rever.</li>
+                <li class="item" data-aos="fade-up">Grazie per averlo rivisto.</li>
+                <li class="item" data-aos="fade-up">Cảm ơn bạn đã xem lại nó.</li>
+                <li class="item" data-aos="fade-up">ขอบคุณสำหรับการทบทวนมัน</li>
+                <li class="item" data-aos="fade-up">इसकी समीक्षा करने के लिए धन्यवाद।</li>
+                <li class="item" data-aos="fade-up">만든 이 이설화</li>
+                <li class="item" data-aos="fade-up">The creator, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">李雪花（Lee Sol Hwa）</li>
+                <li class="item" data-aos="fade-up">El creador, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">Le créateur, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">Der Schöpfer, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">Создатель, Ли Сил Хва</li>
+                <li class="item" data-aos="fade-up">O criador, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">Il creatore, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">Người sáng tạo, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">ผู้สร้าง ลีซอลฮวา</li>
+                <li class="item" data-aos="fade-up">Sang Pencipta, Lee Seol Hwa</li>
+                <li class="item" data-aos="fade-up">निरालम्बन करने वाला, ली सोल हवा</li>
+                <li class="item" data-aos="fade-up">이상 패럴랙스 웹사이트였습니다~ ☺️</li>
+            </ul>
+        </div>
+    </section>
+    <!-- js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>

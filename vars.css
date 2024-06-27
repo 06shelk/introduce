@@ -1,0 +1,38 @@
+/* 폰트 적용 */
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* var */
+:root {
+    --first-color: #FC4100;
+    --second-color: #FFC55A;
+    --third-color: #ffffff;
+    --black: #000000;
+    --body-color: #FFA500;
+
+    /* font */
+    --body-font: 'MangoDdobak-B', serif;
+    --body-width: '1200px';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MangoDdobak-B', Arial;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: var(--body-font);
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
